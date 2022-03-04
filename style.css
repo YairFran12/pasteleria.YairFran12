@@ -1,0 +1,392 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+#container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(225, 225, 226, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  min-height: 100vh;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+#menu {
+  flex-grow: 1;
+  flex-basis: 40%;
+  height: 100%;
+  padding-right: 20px;
+  background-color: #f9e2c7;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#logo {
+  height: 100px;
+}
+
+#menu > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+}
+
+#menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444;
+  padding: 50px;
+  transition: all 300ms;
+}
+
+#menu a:hover {
+  color: #80e0e0;
+}
+
+#carouselExampleControls {
+  margin: 10px;
+  margin-top: 20px;
+  height: 400px;
+}
+
+#panel {
+  height: 450px;
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 0.3em;
+  color: #6a515e;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #d7bdca;
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.box {
+  margin: 0 auto;
+  width: 150px;
+}
+button {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color ease-in-out 0.5s;
+}
+.btn-blue {
+  background-color: #89e0e0;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+.btn-blue:hover {
+  background-color: #f29eb0;
+}
+
+@media (max-width: 1334px) {
+  #menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #444;
+    padding: 20px;
+    transition: all 300ms;
+  }
+}
+
+@media (max-width: 646px) {
+  #menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #444;
+    padding: 5px;
+    transition: all 300ms;
+  }
+
+  #logo {
+    height: 80px;
+    width: 100px;
+  }
+}
+
+.modal-footer {
+  width: 200px;
+  margin: auto;
+}
+
+form {
+  padding: 30px;
+}
+
+.form-control:focus {
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  min-height: 70vh;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.content {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #f29eb0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  color: #fff;
+}
+.content h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+}
+.content span {
+  height: 0.5px;
+  width: 80px;
+  background: #777;
+  margin: 30px 0;
+}
+.content p {
+  padding-bottom: 15px;
+  font-weight: 300;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.links {
+  margin: 15px 0;
+}
+.links li {
+  border: 2px solid #89e0e0;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 160px;
+  text-align: center;
+}
+.links li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.links li:hover {
+  border-color: #f9e2c7;
+}
+
+.vertical-line {
+  height: 30px;
+  width: 3px;
+  background: #89e0e0;
+  margin: 0 auto;
+}
+.icons {
+  display: flex;
+  padding: 15px 0;
+}
+.icons li {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+.icons li i {
+  font-size: 26px;
+  opacity: 0.8;
+}
+.icons li i:hover {
+  color: #89e0e0;
+  cursor: pointer;
+}
+
+/*****************/
+
+@media (max-width: 900px) {
+  section {
+    width: 100%;
+  }
+  .content {
+    height: 100vh;
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .links li a {
+    font-size: 14px;
+  }
+  .links {
+    margin: 5px 0;
+  }
+  .links li {
+    padding: 6px 10px;
+  }
+  .icons li i {
+    font-size: 15px;
+  }
+}
+.credit {
+  text-align: center;
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
