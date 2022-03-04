@@ -281,7 +281,6 @@ section {
   color: #fff;
 }
 .content h2 {
-  text-transform: uppercase;
   font-size: 36px;
   letter-spacing: 6px;
   opacity: 0.9;
@@ -310,11 +309,10 @@ section {
   list-style: none;
   border-radius: 5px;
   padding: 10px 15px;
-  width: 160px;
+  width: 260px;
   text-align: center;
 }
 .links li a {
-  text-transform: uppercase;
   color: #fff;
   text-decoration: none;
 }
@@ -353,7 +351,7 @@ section {
     width: 100%;
   }
   .content {
-    height: 100vh;
+    height: 80vh;
   }
   .content h2 {
     font-size: 20px;
