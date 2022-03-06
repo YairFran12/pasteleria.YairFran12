@@ -388,3 +388,23 @@ section {
   color: #000;
   font-weight: bold;
 }
+
+.tablas {
+  margin: 50px;
+  text-align: center;
+}
+
+.table2 {
+  background-color: #f29eb0;
+  border: solid #f29eb0;
+  text-align: center;
+}
+
+.table tr {
+  text-align: center;
+}
+
+#texto1 {
+  color: #80e0e0;
+  margin-bottom: 20px;
+}
